@@ -33,7 +33,7 @@ Now, run:
 $ bundle exec rubocop
 ```
 
-You do not need to include rubocop directly in your application's dependences. Percy-style will include a specific version of rubocop and rubocop-rspec that is shared across all projects.
+You do not need to include rubocop directly in your application's dependences. Handshake-style will include a specific version of rubocop and rubocop-rspec that is shared across all projects.
 
 ## Development
 
