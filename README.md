@@ -22,7 +22,7 @@ Create a .rubocop.yml with the following directives:
 
 ```
 inherit_gem:
-  percy-style:
+  handshake-style:
     - default.yml
 
 ```
