@@ -1,0 +1,72 @@
+// TODO: This file is separate from the hound-specific tslint.json file
+// so that hound can parse it. Hound struggles with the rulesDirectory rule until
+// https://github.com/houndci/hound/issues/1362 is fixed.
+// Any changes here should be made also in tslint-hound.json
+// Don't include comments within JSON hash. Sections below:
+// 1 - Tightening rules from default
+// 2 - Loosening rules from default
+// 3 - Introduced in new TSLint versions and needed to be disabled, but
+// should be turned on using auto fix
+{
+  "extends": ["tslint:latest"],
+  "rules": {
+    "no-parameter-properties": true,
+    "interface-name": [true, "never-prefix"],
+    "trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
+    "object-literal-sort-keys": false,
+    "jsx-alignment": true,
+    "jsx-no-lambda": true,
+    "jsx-no-string-ref": true,
+    "jsx-self-close": true,
+    "no-default-export": true,
+    "react-this-binding-issue": true,
+    "no-console": [true, "debug", "info", "log", "time", "timeEnd", "trace"],
+    "no-stateless-class": true,
+    "mocha-avoid-only": true,
+    "no-invalid-regexp": true,
+    "insecure-random": true,
+    "mocha-unneeded-done": true,
+    "no-banned-terms": true,
+    "no-document-domain": true,
+    "no-document-write": true,
+    "no-duplicate-case": true,
+    "no-exec-script": true,
+    "no-octal-literal": true,
+    "valid-typeof": true,
+
+    "no-reference": false,
+    "ordered-imports": false,
+    "only-arrow-functions": false,
+    "react-tsx-curly-spacing": [false, "always", {"allowMultiline": false}],
+    "jsx-curly-spacing": false,
+    "jsx-no-multiline-js": false,
+    "jsx-wrap-multiline": false,
+    "arrow-parens": false,
+    "space-before-function-paren": false,
+    "prefer-const": false,
+    "no-empty-interface": false,
+    "prefer-for-of": false,
+    "no-var-requires": false,
+
+    "semicolon": ["always"],
+    "align": [false],
+    "no-unused-expression": false,
+    "no-object-literal-type-assertion": false,
+    "ban-types": false,
+    "prefer-conditional-expression": false,
+    "typeof-compare": false,
+    "arrow-return-shorthand": false,
+    "no-unnecessary-initializer": false,
+    "jsx-boolean-value": false,
+    "jsx-no-bind": false,
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
+  }
+}
+
+// would be nice to add these, but need to clean up first
+// "no-inner-html": true,
+// "no-empty-interfaces": true,
+// "no-reserved-keywords": true,
+// "no-unnecessary-semicolons": true,
+// "react-unused-props-and-state": true,
+// "arrow-parens": [true, "ban-single-arg-parens"],

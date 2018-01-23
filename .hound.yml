@@ -1,0 +1,22 @@
+ruby:
+  enabled: true
+  config_file: .rubocop.yml
+
+coffee_script:
+  enabled: true
+  config_file: .coffeelint.json
+
+java_script:
+  enabled: false
+
+haml:
+  enabled: true
+  config_file: .haml-style.yml
+
+tslint:
+  enabled: true
+  config_file: tslint-hound.json
+
+stylelint:
+  enabled: true
+  config_file: .stylelintrc.json
